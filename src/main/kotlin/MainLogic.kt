@@ -14,7 +14,7 @@ open class MainLogic : TelegramLongPollingBot() {
     @Override
     override fun onUpdateReceived(update: Update) {
 
-        val pathToTestFolder = "C:\\Jenkins\\workspace\\trading-system\\checkTime_DEV"
+        val pathToTestFolder = "C:\\Jenkins\\workspace\\trading-system\\checkTime_DEV\\"
         if (update.hasMessage() && update.message.hasText()) {
 
             val chatId = update.message.chatId
